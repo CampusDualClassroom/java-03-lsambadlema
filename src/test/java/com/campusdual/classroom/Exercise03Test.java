@@ -56,7 +56,7 @@ class Exercise03Test {
     @DisplayName("Test unsuccessful check user. Username provided → TestUser, pass provided → sebas01 ")
     void testUnsuccessfulVerify(){
         Exercise03.checkUser("TestUser", "sebas01");
-        boolean check = this.outContent.toString().contains("Ups. No pudimos validar tus datos. Tu nombre de usuario no es Sebas");
+        boolean check = this.outContent.toString().contains("Ups. No pudimos validar tus datos. Tu nombre de usuario no es TestUser");
         assertTrue(check, "Error message is not correct");
     }
 
